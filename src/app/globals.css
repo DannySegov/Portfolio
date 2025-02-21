@@ -4,7 +4,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1f1934;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +14,12 @@
   }
 }
 
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(280deg, #032043, #030514); /* Degradado de 2 colores */
 }
