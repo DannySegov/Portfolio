@@ -14,7 +14,7 @@ export const navbar = () => {
     return (
         <MotionTransition>
             <nav className='flex flex-wrap items-center justify-between mex-w-5xl p-4 mx-auto md:py-8'>
-                <Link href='/' className=' flex items-center'>
+                <Link href='/' className='flex items-center'>
                     <Image src="/public/next.svg" alt="Logo" width="150" height="40" />
                 </Link>
                 <RiMenu3Line className='block text-3xl md:hidden cursor-pointer' onClick={() => setIsOpenMenuMobile(!isOpenMenuMobile)} /> {/* Icono de menu para mobile se ejecuta la función setIsOpenMenuMobile negando el value definido como el state*/}
