@@ -8,9 +8,9 @@ interface SocialLinkProps {
 
 export function SocialLink({ href, icon, label }: SocialLinkProps) {
     return (
-        <div className="flex items-center space-x-2">
+        <a href={href} className="flex items-center space-x-3 text-lg font-medium no-underline hover:no-underline">
             {icon}
-            <a href={href} className="text-lg font-medium hover:underline">{label}</a>
-        </div>
+            <span>{label}</span>
+        </a>
     );
 }
