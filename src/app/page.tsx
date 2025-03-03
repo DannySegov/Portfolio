@@ -1,7 +1,12 @@
+import { Experience } from "@/components/Experience/Experience";
 import { OnMy } from "@/components/OnMy";
-
 export default function Home() {
   return (
-    <OnMy />
+    <div>
+      <OnMy />
+      <Experience />  
+    </div>
   );
 }
+
+
