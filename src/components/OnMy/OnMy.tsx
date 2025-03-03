@@ -14,7 +14,7 @@ export function OnMy() {
                     programación como Java, JavaScript, Python y HTML, así como del
                     framework Angular para la construcción de aplicaciones web dinámicas y escalables.
                 </p>
-                <div className="flex my-10 text-center items-center space-x-20">
+                <div className="flex flex-col md:flex-row my-10 text-center items-center space-y-4 md:space-y-0 md:space-x-20">
                     <SocialLink
                         href="#"
                         icon={
