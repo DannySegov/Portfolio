@@ -1,25 +1,29 @@
 import { dataExperience } from "./Experience.data";
+import { BsCalendar2Fill } from "react-icons/bs";
 
-export function Experience() {
+export default function Experience({ id }: { id: string }) {
     return (
-        <div className="w-full max-w-3xl mx-auto">
-            <div className="-my-6">
-                {dataExperience.map(({ id, title, date, description }) => (
-                    <div key={id} className="py-6">
-                        <h3 className="text-2xl font-semibold">{title}</h3>
-                        <p className="text-sm text-gray-500">{date}</p>
-                        <p className="mt-4">{description}</p>
-
-                        <div className="flex flex-col sm:flex-row items-start mb-1
-                        group-last:before:hidden before:absolute
-                        before:left-2 sm:before:left-0 before:h-full">
-
-                        </div>
-                    </div>
-                ))}
+        <div id={id} className="container mx-auto py-8 px-4">
+            <h3 className="text-4xl font-bold my-10 text-center">Experiencia</h3>
+            <div className="flex flex-col items-center">
+                <ul className="relative border-l max-w-2xl">
+                    {dataExperience.map(({ id, title, company, date, description }) => (
+                        <li key={id} className="mb-8 md:mb-6 ml-6 flex items-start">
+                            <span className="absolute flex items-center justify-center bg-grayBlue rounded-full -left-2 ring-4 ring-gray-600 w-4 h-4 mt-1">
+                                <BsCalendar2Fill className="text-blueLight text-sm w-3 h-3" />
+                            </span>
+                            <div className="ml-2">
+                                <h3 className="flex items-center gap-2 mb-1 text-xl font-bold text-secondary">
+                                    {title}<span className="text-white">-</span>
+                                    <span className="text-sm text-orangeLight">{company}</span>
+                                </h3>
+                                <time className="block mb-5 text-2lg font-semibold leading-none text-blueLiDark">{date}</time>
+                                <p className="mb-4 text-lg">{description}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
-            <p>Contenido de prueba</p>
         </div>
-
     )
 }

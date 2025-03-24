@@ -1,8 +1,8 @@
 import { SocialLink } from "./SocialLink";
 
-export function OnMy() {
+export default function OnMy({ id }: { id: string }) {
     return (
-        <div className="grid max-w-7xl mx-auto md:grid-cols-2">
+        <div id={id} className="grid max-w-7xl mx-auto md:grid-cols-2">
             <div className="mt-20 flex flex-col px-4 md:px-0">
                 <h1 className="text-5xl font-semibold">Daniela Salazar Segoviano</h1>
                 <h3 className="text-3xl text-secondary mt-4">Desarrollador Frontend</h3>
