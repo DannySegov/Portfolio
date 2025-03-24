@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/navbar";
 
-const urbanist = Urbanist({
+const onest = Onest({
   subsets: ["latin"],
+ // variable: true,
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.className} antialiased`}
+        className={`${onest.className} antialiased`}
       >
         <Navbar/>
         {children}

@@ -2,31 +2,31 @@ export const dataHeader = [ // Data para el menu de navegación
     {
         id: 1,
         name: 'Sobre mi',
-        idLink: '/' //# Home
+        url: '#home' //# Home
     },
     {
         id: 2,
         name: 'Experiencia',
-        idLink: '/experience'
+        url: '#experience'
     },
     {
         id: 3,
         name: 'Proyectos',
-        idLink: '/projects'  
+        url: '#projects'  
     },
     {
         id: 4,
         name: 'Tecnologias',
-        idLink: '/technologies'
+        url: '#technologies'
     },
     {
         id: 5,
         name: 'Certificaciones',
-        idLink: '/certifications'
+        url: '#certifications'
     },
     {
         id: 6,
         name: 'Contacto',
-        idLink: '/contact'
+        url: '#contact'
     }   
 ]
