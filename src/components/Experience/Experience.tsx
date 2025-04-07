@@ -1,3 +1,5 @@
+'use client';
+
 import { dataExperience } from "./Experience.data";
 import { BsCalendar2Fill } from "react-icons/bs";
 
@@ -17,8 +19,8 @@ export default function Experience({ id }: { id: string }) {
                                     {title}<span className="text-white">-</span>
                                     <span className="text-sm text-orangeLight">{company}</span>
                                 </h3>
-                                <time className="block mb-5 text-2lg font-semibold leading-none text-blueLiDark">{date}</time>
-                                <p className="mb-4 text-lg">{description}</p>
+                                <time className="block mb-5 text-2lg font-semibold leading-snug text-blueLiDark">{date}</time>
+                                <p className="mb-4 text-lg leading-snug">{description}</p>
                             </div>
                         </li>
                     ))}
