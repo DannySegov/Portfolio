@@ -6,7 +6,7 @@ export default function OnMy({ id }: { id: string }) {
             <div className="mt-20 flex flex-col px-4 md:px-0">
                 <h1 className="text-5xl font-semibold">Daniela Salazar Segoviano</h1>
                 <h3 className="text-3xl text-secondary mt-4">Desarrollador Frontend</h3>
-                <p className="mt-5">
+                <p className="mt-5 text-lg">
                     Programador Junior con más de un año de experiencia
                     laboral en el desarrollo Frontend. Especializado en
                     la resolución de problemas, trabajo en equipo y aprendizaje
