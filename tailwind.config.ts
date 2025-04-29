@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,6 +16,7 @@ export default {
         blueCard: "#030C20",
         blueCardLight: "#032043",
         blueTag: "#102841",
+        grayTransparent: "rgba(128, 128, 128, 0.5)", // Gris transparente
         orangeLight: "#e6a169",
         background: "var(--background)",
         foreground: "var(--foreground)",
