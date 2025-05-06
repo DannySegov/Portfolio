@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --background: #ffffff;
   --foreground: #1f1934;
@@ -22,4 +25,15 @@ html, body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(280deg, #032043, #030514); /* Degradado de 2 colores */
+}
+
+/* Aumenta únicamente el tamaño de los botones del slider */
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    margin: 0 -20px; /* Márgenes solo en los lados */
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px; /* Aumenta el tamaño del ícono */
 }

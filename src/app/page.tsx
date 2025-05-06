@@ -1,3 +1,4 @@
+import Certifications from "@/components/Certifications/Certifications";
 import Experience from "@/components/Experience/Experience";
 import OnMy from "@/components/OnMy/OnMy";
 import Projects from "@/components/Projects/Projects";
@@ -9,8 +10,9 @@ export default function Home() {
     <div className="w-full mx-auto">
       <OnMy id="home"/>
       <Experience id="experience"/>  
-      <Projects id="proyects"/>
+      <Projects id="projects"/>
       <Technologies id="technologies"/>
+      <Certifications id="certifications"/>
     </div>
   );
 }
