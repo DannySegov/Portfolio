@@ -4,7 +4,7 @@ import { technologies } from "./Technologies.data";
 
 export default function Technologies({ id }: { id: string }) {
     return (
-        <div id={id} className="container mx-auto py-8 px-4">
+        <div id={id} className="h-screen flex flex-col mx-auto px-4 justify-center items-center">
             <h3 className="text-3xl sm:text-4xl font-bold my-6 sm:my-10 text-center">Tecnologías</h3>
             <div className="flex flex-col lg:items-center">
                 <div className="relative max-w-full sm:max-w-md md:max-w-lg lg:max-w-7xl rounded-[20px] sm:rounded-[30px] px-2 py-2 overflow-visible shadow-xl bg-blueCard border border-blueCardLight">
