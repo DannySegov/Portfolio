@@ -3,7 +3,7 @@ export const dataExperience = [
         id: 1,
         title: 'Desarrollador Frontend',
         company: 'El Tornillo',
-        date: 'Mayo 2024 - Actualidad',
+        date: 'Mayo 2024 - Mayo 2025',
         description: 'Desarrollo de una e-commerce utilizando PHP, implementando funcionalidades esenciales para la gestión de productos, usuarios y transacciones. Actualmente trabajando en el desarrollo y maquetación de una nueva e-commerce con Next.js, enfocada en un diseño moderno y una experiencia de usuario optimizada.'
     },
     {

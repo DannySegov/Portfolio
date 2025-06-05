@@ -2,7 +2,7 @@ export const dataHeader = [ // Data para el menu de navegación
     {
         id: 1,
         name: 'Sobre mi',
-        url: '#home' //# Home
+        url: '#onMy' //# Home
     },
     {
         id: 2,

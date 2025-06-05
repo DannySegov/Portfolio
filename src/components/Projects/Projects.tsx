@@ -4,7 +4,7 @@ import { projects } from "./Projects.data";
 
 export default function Projects({ id }: { id: string }) {
     return (
-        <div id={id} className="container mx-auto py-8 px-4">
+        <div id={id} className="container  mx-auto py-8 px-4">
             <h3 className="text-4xl font-bold my-10 text-center">Proyectos</h3>
             <div className="max-w-3xl mx-auto right-30 text-lg text-justify">
                 <p>
